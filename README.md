@@ -20,7 +20,7 @@
 - [ ] `docker exec -it ... bash` into the running container and add a web server
 - [ ] Stop the container and `docker commit` a new image from it
 - [ ] Run a container from the new image, issuing a `node index.js` command
-- [ ] Install `dkrm` and clean up
+- [ ] Install [`dkrm`](https://github.com/joshwyatt/dkrm) and clean up
  
 ### Dockerfiles
 
