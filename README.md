@@ -4,7 +4,7 @@
 
 - [ ] Create a local virtualbox machine called `default` using `docker-machine`
 - [ ] Use `docker-machine env` to point Docker Machine at `default`
-  - [ ] Install `dkme`
+  - [ ] Install [`dkme`](https://github.com/joshwyatt/dkme)
  
 ### Sanity check
 
