@@ -60,35 +60,36 @@
 
 ### Docker Machine
 
-`docker-machine ls`: get info on all machines available to Docker Machine
-`docker-machine build --driver <driver-name> <options> <machine-name>`: create new host machine available to Docker Machine
-`docker-machine env <machine-name>`: get info on how to point Docker Machine at `<machine-name>`
+ - `docker-machine ls`: get info on all machines available to Docker Machine
+ - `docker-machine build --driver <driver-name> <options> <machine-name>`: create new host machine available to Docker Machine
+ - `docker-machine env <machine-name>`: get info on how to point Docker Machine at `<machine-name>`
 
 ### Docker client
 
-`docker ps`: show all running containers on this machine
-`docker ps -a`: show all containers on this machine running or not
-`docker ps -aq`: show all ids for containers on this machine running or not
-`docker images`: show all images on this machine 
-`docker rmi <image-name>`: remove `<image-name>` from machine
-`docker stop <container-name>`: stop running `<container-name>`
-`docker rm <container-name>`: destroy `<container-name>`
-`docker rm -f <container-name>`: stop and destroy `<container-name>`
-`docker rm -f $(docker ps -aq)`: stop and destroy all containers on this machine
+ - `docker ps`: show all running containers on this machine
+ - `docker ps -a`: show all containers on this machine running or not
+ - `docker ps -aq`: show all ids for containers on this machine running or not
+ - `docker images`: show all images on this machine 
+ - `docker rmi <image-name>`: remove `<image-name>` from machine
+ - `docker stop <container-name>`: stop running `<container-name>`
+ - `docker rm <container-name>`: destroy `<container-name>`
+ - `docker rm -f <container-name>`: stop and destroy `<container-name>`
+ - `docker rm -f $(docker ps -aq)`: stop and destroy all containers on this machine
 
-`docker run [<options>] <image-name> [<command>]`: run a container from `<image-name>` [with `<command>`]
+ - `docker run [<options>] <image-name> [<command>]`: run a container from `<image-name>` [with `<command>`]
+
   Options include:
-    `--name`: give the container a name
-    `--rm`: destroy the container as soon as it stops running
-    `-d`: run the container as a background process, or daemon
-    `-it`: run the container interactively, running from its command line
-    `-p <host-port>:<container-port>`: map the exposed `<container-port>` to `<host-port>`
-    `--link <container-to-link-to>:<alias-for-linked-container>`: Create environmental variable linking to `<container-to-link-to`
+    - `--name`: give the container a name
+    - `--rm`: destroy the container as soon as it stops running
+    - `-d`: run the container as a background process, or daemon
+    - `-it`: run the container interactively, running from its command line
+    - `-p <host-port>:<container-port>`: map the exposed `<container-port>` to `<host-port>`
+    - `--link <container-to-link-to>:<alias-for-linked-container>`: Create environmental variable linking to `<container-to-link-to`
 
-`docker exec <container-name> <command-name>`: execute `<command-name>` on running `<container-name>`
-`docker exec -it <container-name> bash`: go to command line of running `<container-name>`
+ - `docker exec <container-name> <command-name>`: execute `<command-name>` on running `<container-name>`
+ - `docker exec -it <container-name> bash`: go to command line of running `<container-name>`
 
 
 ### Docker Compose
 
-`docker-compose up`: run in directory with `docker-compose.yml` to launch fleet of containers based on configuration in `yml` file
+ - `docker-compose up`: run in directory with `docker-compose.yml` to launch fleet of containers based on configuration in `yml` file
