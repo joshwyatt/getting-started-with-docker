@@ -76,6 +76,7 @@
  - `docker rm <container-name>`: destroy `<container-name>`
  - `docker rm -f <container-name>`: stop and destroy `<container-name>`
  - `docker rm -f $(docker ps -aq)`: stop and destroy all containers on this machine
+ - [`dkrm`](https://github.com/joshwyatt/dkrm), if installed, alias for `docker rm -f $(docker ps -aq)`
 
  - `docker run [<options>] <image-name> [<command>]`: run a container from `<image-name>` [with `<command>`]
 
