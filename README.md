@@ -63,6 +63,7 @@
  - `docker-machine ls`: get info on all machines available to Docker Machine
  - `docker-machine build --driver <driver-name> <options> <machine-name>`: create new host machine available to Docker Machine
  - `docker-machine env <machine-name>`: get info on how to point Docker Machine at `<machine-name>`
+ - [`dkme](https://github.com/joshwyatt/dkme) <machine-name>`, if intalled: point Docker Machine at `<machine-name>`
 
 ### Docker client
 
@@ -82,7 +83,7 @@
     - `--name`: give the container a name
     - `--rm`: destroy the container as soon as it stops running
     - `-d`: run the container as a background process, or daemon
-    - `-it`: run the container interactively, running from its command line
+    - `-it`: run the container interactively, running from its command line.This must be used in conjunction with the `<command>` `bash`, e.g., `docker run -it node bash`
     - `-p <host-port>:<container-port>`: map the exposed `<container-port>` to `<host-port>`
     - `--link <container-to-link-to>:<alias-for-linked-container>`: Create environmental variable linking to `<container-to-link-to`
 
