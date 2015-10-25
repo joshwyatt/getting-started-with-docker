@@ -10,7 +10,7 @@
 
 - [ ] Try out `docker-machine ls`, `docker ps`, `docker ps -a`, `docker images`
   - [ ] Create aliases `dkm`, `dk`, and `dki`
-- [ ] Import images as needed using `docker load -i <path to image file>`
+- [ ] Import images as needed using `docker load -i <path to image file>` if you have them locally, or `docker pull node:latest node:onbuild redis mongo` to pull them from Docker Hub
  
 ### Basic `docker run`
 
