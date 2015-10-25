@@ -50,7 +50,7 @@
 
 - [ ] Create account and get access key
 - [ ] Create the machine
-- [ ] User Docker Machine to point `digital-ocean` machine
+- [ ] Use Docker Machine to point to `digital-ocean` machine
 - [ ] `dk ps` etc.
 - [ ] `docker-compose up`
 - [ ] profit
@@ -63,7 +63,7 @@
  - `docker-machine ls`: get info on all machines available to Docker Machine
  - `docker-machine build --driver <driver-name> <options> <machine-name>`: create new host machine available to Docker Machine
  - `docker-machine env <machine-name>`: get info on how to point Docker Machine at `<machine-name>`
- - [`dkme](https://github.com/joshwyatt/dkme) <machine-name>`, if intalled: point Docker Machine at `<machine-name>`
+ - [`dkme`](https://github.com/joshwyatt/dkme) `<machine-name>`, if intalled: point Docker Machine at `<machine-name>`
 
 ### Docker client
 
