@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  ping:
+    image: pinger
+  pong:
+    image: pinger
